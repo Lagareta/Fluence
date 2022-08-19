@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFF7E"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/FLUENCE"
+        android:textColor="@color/black"
+        android:textSize="200px" />
+
+    <Button
+        android:id="@+id/jouer"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#CE1010"
+        android:text="@string/jouer"
+        android:textColor="#000000"
+        android:textSize="40px"/>
+
+
+    <Button
+        android:id="@+id/bureau_du_prof"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/jouer"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="-421dp"
+        android:layout_marginEnd="-399dp"
+        android:layout_marginRight="-399dp"
+        android:backgroundTint="#BAC1FF"
+        android:text="@string/Bureau_du_prof"
+        android:textColor="#CE1010"
+        android:textSize="40px" />
+
+    <ImageView
+        android:id="@+id/bulle"
+        android:layout_width="474dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pelican"
+        android:layout_alignRight="@+id/pelican"
+        android:layout_alignBottom="@+id/pelican"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-225dp"
+        android:layout_marginRight="-225dp"
+        android:layout_marginBottom="263dp"
+        android:contentDescription="@string/bulle"
+        app:srcCompat="@drawable/bulle_discussion_removebg_preview" />
+
+    <TextView
+        android:id="@+id/discours_pelican"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="202dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignEnd="@+id/bulle"
+        android:layout_alignRight="@+id/bulle"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="155dp"
+        android:text="@string/bienvenue_sur_notre_application_ici_tu_pourras_apprendre_en_t_amusant" />
+
+    <ImageView
+        android:id="@+id/pelican"
+        android:layout_width="353dp"
+        android:layout_height="317dp"
+        android:layout_alignBottom="@+id/jouer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-97dp"
+        android:layout_marginEnd="-208dp"
+        android:layout_marginRight="-208dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:contentDescription="@string/pelican"
+        app:srcCompat="@drawable/pelican_removebg_preview__1_" />
+
+</RelativeLayout>

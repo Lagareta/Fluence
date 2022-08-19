@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFF7E"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/exercice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#BAC1FF"
+        android:text="@string/exercice1"
+        android:textColor="#CE1010"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/voir_resultats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="247dp"
+        android:backgroundTint="#BAC1FF"
+        android:text="@string/Voir_resultats"
+        android:textColor="#CE1010"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exercice1"
+        android:layout_marginTop="-347dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_toStartOf="@+id/exercice1"
+        android:layout_toLeftOf="@+id/exercice1"
+        android:backgroundTint="#BAC1FF"
+        android:text="@string/retour"
+        android:textColor="#CE1010"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/Parametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retour"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="-12dp"
+        android:layout_marginRight="-12dp"
+        android:layout_toStartOf="@+id/exercice1"
+        android:layout_toLeftOf="@+id/exercice1"
+        android:backgroundTint="#BAC1FF"
+        android:text="@string/Paramètres"
+        android:textColor="#CE1010"
+        android:textSize="40px" />
+</RelativeLayout>

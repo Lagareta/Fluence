@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFF7E"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/est_ce_que_les_mots_sont_les_m_mes"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"/>
+
+
+    <TextView
+        android:id="@+id/rep_oui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="266dp"
+        android:text="@string/bravo_tu_as_r_ussi"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/rep_non"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="252dp"
+        android:text="@string/dommage_r_essaye_encore"
+        android:textSize="34sp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/oui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/oui"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView4"
+        android:backgroundTint="#BAC1FF"
+        android:textColor="#CE1010"
+        android:textSize="40px"/>
+
+    <Button
+        android:id="@+id/suite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="166dp"
+        android:backgroundTint="#BAC1FF"
+        android:text="@string/suite"
+        android:textColor="#CE1010"
+        android:textSize="40px" />
+
+    <Button
+        android:id="@+id/non"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/non"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/oui"
+        android:backgroundTint="#BAC1FF"
+        android:textColor="#CE1010"
+        android:textSize="40px"/>
+
+
+</RelativeLayout>
